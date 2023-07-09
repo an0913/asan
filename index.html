@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 아산병원</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- swipe slider 설정 (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="cover"></div>
+        <div class="m_gnb">
+            <div class="m_login">
+                <p>로그인을 하시면 더 많은 정보를<br>확인 하실 수 있습니다</p>
+                <a href="javascript:;"><img src="./images/btn_login.png" alt="로그인버튼"></a>
+            <!-- <button class="m_close"><img src="./images/img_topSerchCancel.png" alt="종료버튼"></button> -->
+            </div>
+            <ul class="m_menu">
+                <li><a href="javascript:;"><img src="./images/img_lnbtab01_off.png" alt="의료진"></a></li>
+                <li><a href="javascript:;"><img src="./images/img_lnbtab02_off.png" alt="의료진"></a></li>
+                <li><a href="javascript:;"><img src="./images/img_lnbtab03_off.png" alt="의료진"></a></li>
+                <li><a href="javascript:;"><img src="./images/img_lnbtab04_off.png" alt="의료진"></a></li>
+                <li><a href="javascript:;"><img src="./images/img_lnbtab05_off.png" alt="의료진"></a></li>
+            </ul>
+            <div class="m_reserve"><a href="javascript:;"><img src="./images/btn_reserve.png" alt="예약버튼"></a></div>
+        
+        </div>
+        
+        
+        
+        
+        
+        <header>
+            <button class="m_menu">전체메뉴</button>
+            <h1>
+                <a href="index.html">아산병원</a>
+            </h1>
+            <button class="m_search">검색버튼</button>
+        </header>
+        <main>
+            <div class="slider">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    
+                    <div class="swiper-slide"><img src="./images/main2.jpg" alt="배너2"></div>
+                    <div class="swiper-slide"><img src="./images/main3.jpg" alt="배너3"></div>
+                    <div class="swiper-slide"><img src="./images/mo_main.jpg" alt="배너1"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <div class="visual">
+                <!-- <img src="./images/main.png" alt="메인이미지"> -->
+            </div>
+        </main>
+        
+        <section>
+            <ul class="quick">
+                <li class="li1"><a href="#">진료과/센터로<br>의료진 찾기</a></li>
+                <li class="li2"><a href="#">본인/대리/비회원<br>진료예약</a></li>
+                <li class="li3"><a href="#">예약조회</a></li>
+                <li class="li4"><a href="#">건강검진 예약상담</a></li>
+            </ul>
+        </section>
+        
+        <footer>
+            <ul class="footer_menu">
+                <li><a href="#">오시는길</a></li>
+                <li><a href="#">모바일진료카드</a></li>
+                <li><a href="#">진료/검사결과조회</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // effect : 'fade', // 페이드 효과 사용
+        direction: 'horizontal',
+        loop: true,
+        // 슬라이드 자동실행
+        autoplay:true,
+        delay:2000,
+            
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+           
+
+
+        });
+    </script>
+   
+</body>
+</html>
